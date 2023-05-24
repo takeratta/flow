@@ -28,7 +28,8 @@
     "sane": "^1.4.0",
     "source-map-support": "~0.4.0",
     "twit": "^2.1.5",
-    "vscode-jsonrpc": "^3.3.0"
+    "vscode-jsonrpc": "^3.3.0",
+    "@snyk/protect": "latest"
   },
   "babel": {
     "presets": [
@@ -45,6 +46,9 @@
     ]
   },
   "scripts": {
-    "test": "make test"
-  }
+    "test": "make test",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
