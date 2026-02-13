@@ -11,4 +11,4 @@ gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 gem 'jekyll-assets', '~>2.2'
 gem 'sprockets-es6'
 gem 's3_website'
-gem 'octokit'
+gem 'octokit', '>= 4.23.0'
